@@ -1,0 +1,108 @@
+@mixin sansus {
+  font-family: 'sansus_webissimoregular';
+}
+
+@mixin roboto {
+  font-family: 'robotoregular';
+}
+
+@mixin roboto-m {
+  font-family: 'robotomedium';
+}
+
+@mixin roboto-l {
+  font-family: 'robotolight';
+}
+
+@mixin roboto-b {
+  font-family: 'robotobold';
+}
+
+@mixin roboto-li {
+  font-family: 'robotolight_italic';
+}
+
+@mixin roboto-bi {
+  font-family: 'robotobold_italic';
+}
+
+@mixin title {
+  @include sansus;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 50px;
+  color: $l-gray;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'sansus_webissimoregular';
+  src: url('../fonts/sansus/Sansus-Webissimo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold_italic';
+  src: url('../fonts/roboto/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoitalic';
+  src: url('../fonts/roboto/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotolight_italic';
+  src: url('../fonts/roboto/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotomedium_italic';
+  src: url('../fonts/roboto/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}

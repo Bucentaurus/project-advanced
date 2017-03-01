@@ -1,0 +1,52 @@
+.c-skills-group__title {
+  @include roboto-m;
+  font-size: 28px;
+  color: $l-gray;
+  margin-bottom: 10px;
+}
+
+.c-skill {
+  @extend %clearfix;
+  position: relative;
+}
+
+
+.c-skill__circle {
+  width: 100px;
+  height: 100px;
+  display: block;
+  fill: transparent;
+  stroke-width: 15px;
+  stroke: red;
+  float: left;
+}
+
+.c-skills__circle-above {
+  stroke: $green;
+}
+
+.c-skills__circle-under {
+  stroke: $green;
+}
+
+.c-skill__title-container {
+  padding: 10px 0 0 0;
+  text-align: center;
+  position: relative;
+  float: left;
+  height: 37px;
+  width: 57px;
+  top: 32px;
+  right: 79px;
+}
+
+.c-skill__title-container-long {
+  padding: 5px 0 0 0;
+}
+
+.c-skill__title-text {
+  @include roboto-m;
+  font-size: 12px;
+  color: $dark-green;
+}
+

@@ -1,0 +1,261 @@
+.l-works-title {
+  height: 186px;
+  @extend %clearfix;
+  position: relative;
+  background: #f8f9f5;
+}
+
+.l-triangle__left, .l-triangle__right {
+  width: 50%;
+  height: 60px;
+  float: left;
+  position: relative;
+}
+
+.l-triangle__left {
+  
+  .c-works__triangle {
+    left: 0;
+    fill: #f8f9f5;
+  }
+}
+
+.l-triangle__right {
+  
+  .c-works__triangle {
+    right: 0;
+    fill: #f8f9f5;
+  }
+}
+
+.c-works__triangle {
+  display: block;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: 100%;
+}
+
+.l-section-works-title {
+  float: none;
+  width: auto;
+  padding-top: 0;
+  //left: 35%;
+  @include centered(x);
+  top: 60px; 
+}
+
+.l-works {
+  height: 750px;
+  @extend %clearfix;
+}
+
+.l-works__col-left, .l-works__col-right {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.l-works__col-left {
+  background: $l-green;
+  text-align: center;
+  padding-top: 290px;
+  padding-left: 110px;
+  padding-right: 280px;
+  box-sizing: border-box;
+}
+
+.l-works__block-title {
+  width: 320px;
+  display: inline-block;
+
+  &:after {
+    bottom: -25px;
+  }
+}
+
+.l-works__subtitle {
+  @include roboto-m;
+  font-size: 16px;
+  color: $dark-green;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.l-works__button {
+  width: 195px;
+  height: 45px;
+  background: $green;
+  border-radius: 55px;
+  @include roboto-m;
+  font-size: 16px;
+  color: #ffffff;
+  @extend %clearfix;
+  padding: 14px 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.l-works-button__link {
+  height: 45px;
+  width: 195px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.l-button__icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.l-button__text {
+  float: left;
+}
+
+.l-button__link-svg {
+  width: 20px;
+  height: 19px;
+  fill: #ffffff;
+}
+
+.l-works__col-right {
+  background: $d-gray;
+}
+
+.l-websites__high {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 60px;
+  height: 525px;
+  text-align: center;
+}
+
+.l-websites__low {
+  width: 100%;
+  height: 225px;
+  @extend %clearfix;
+}
+
+.l-website-example {
+  width: 50%;
+  float: left;
+  height: 225px;
+  position: relative;
+}
+
+.l-website-example__pic {
+  float: left;
+  height: 225px;
+  width: 100%;
+}
+
+.l-website-example__pic-up {
+  background-image: url('../img/content/site5.png');
+ // background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &+.l-website-example__layer {
+    position: relative;
+    height: 100%;
+    background: #b0b7aa;
+    opacity: 0.7;
+  }
+}
+
+.l-website-example__pic-down {
+  background-image: url('../img/content/site6.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &+.l-website-example__layer {
+    position: relative;
+    height: 100%;
+    background: #93998d;
+    opacity: 0.7;
+  }
+}
+
+.l-button__svg {
+  position: absolute;
+  top: 50%;
+  right: 42%;
+  width: 45px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.l-talks {
+    height: 1352px;
+    position: relative;
+}
+
+.l-talks__high {
+    position: relative;
+    height: 20%;
+}
+
+.l-talks-title {
+    margin-top: 60px;
+    float: none;
+    width: 500px;
+    padding-top: 0;
+    @include centered (x);
+    
+    
+    &::after {
+        left: 206px;
+    }
+}
+
+.l-talks__center {
+    position: relative;
+    height: 25%;
+}
+
+.l-review__list {
+    @include centered(x);
+    @extend %clearfix;
+    width: 800px;
+}
+
+.l-review__item {
+    float: left;
+    width: 400px;
+    height: 270px;
+    left: 25%;
+    box-sizing: border-box;
+}
+
+.l-review__avatar {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+.l-review__pic {
+    width: 77px;
+
+}
+
+.l-talks__low {
+    position: relative;
+    height: 55%;
+}
+
+.l-contact-form {
+    width: 380px;
+    height: 461px;
+    @include centered();
+    top: 35%;
+    
+}

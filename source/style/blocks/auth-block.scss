@@ -1,0 +1,73 @@
+.c-auth-block {
+  width: 380px;
+  height: 390px;
+  @include centered();
+  border-radius: 5px 4px 4px 5px;
+}
+
+
+.c-auth-block__high {
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  height: 390px - 45px;
+  background: rgba(12, 26, 20, 0.6);
+}
+
+.c-auth-block__low {
+  height: 45px;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu-list {
+  @extend %clearfix;
+}
+
+.menu-list {
+  background: #689858;
+  overflow: hidden;
+}
+
+.menu-item {
+  text-align: center;
+  float: left;
+  height: 45px;
+  width: 126px;
+  box-sizing: border-box;
+  background: #4f873c;
+  border-right: 2px solid #a2bd9f;
+
+  &:first-child {
+    width: 156px;
+  }
+
+  &:last-child {
+    border-right: none;
+    width: 98px;
+  }
+  
+  &:hover {
+    background: #689858;
+  }
+
+}
+
+.menu-item-link {
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  @include roboto-m;
+  font-size: 16px;
+  color: #fff;
+}
+
+.menu-item__text {
+  display: inline-block;
+}
+

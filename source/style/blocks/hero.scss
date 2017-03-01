@@ -1,0 +1,53 @@
+.l-hero {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.l-hero__bg {
+  @include centered(x);
+  top: -35%;
+  width: 100%;
+}
+
+.l-hero__container {
+  @include centered(y);
+  height: 100%;
+  width: 100%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    right: calc(50% - 10px);
+    width: 26px;
+    height: 16px;
+    background-image: url('../img/icons/arrow_down.svg');
+  }
+}
+
+.c-hero__title-pic {
+  @include centered();
+  top: 50%;
+}
+
+.c-menu-button {
+  position: absolute;
+  height: 40px;
+  width: 35px;
+  right: 30px;
+  top: 28px;
+}
+
+.c-menu-button__link {
+  display: inline-block;
+  height: 40px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.c-menu-button__icon {
+  height: 40px;
+  width: 35px;
+  fill: #ffffff;
+}

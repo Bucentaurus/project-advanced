@@ -1,0 +1,174 @@
+.l-about {
+  @extend %clearfix;
+}
+
+.l-about__col {
+  float: left;
+  width: 50%;
+  position: relative;
+  height: 850px;
+  
+  &_left {
+    background: $l-green;
+    @extend %clearfix;
+
+    .c-about__triangle {
+      left: 0;
+      fill: $l-green;
+    }
+  }
+  
+  &_right {
+    background: $milk;
+   // margin-left: 20px;
+   // margin-top: 25px;
+
+    .c-about__triangle {
+      right: 0;
+      fill: $milk;
+    }
+  }
+}
+
+
+.c-about {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+.c-about__triangle {
+  display: block;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: 100%;
+}
+
+.c-block-title {
+   @include title;
+
+  @extend %underline;
+}
+
+
+.c-block-title-right {
+
+  &::after {
+    top: 94px;
+    left: 89px;
+  }
+
+}
+
+.c-block-text {
+  line-height: 24px;
+  width: 415px;
+  @include roboto;
+  font-size: 16px;
+  text-align: left;
+  color: $l-gray;
+}
+
+.c-about__pic-container {
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  margin-right: 20px;
+}
+
+.c-about__pic {
+  width: 437px;
+  height: 390px;
+}
+
+.l-skills {
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.l-skills-list {
+  margin-bottom: 30px;
+}
+
+.l-skills-list__item {
+  @extend %clearfix;
+}
+
+.l-skills-group {
+  text-align: left;
+}
+
+.c-block-title-right {
+  line-height: 41px;
+  display: inline-block;
+  width: 258px;
+  text-align: center;
+}
+
+.l-skills__text {
+  margin-bottom: 45px;
+  text-align: left;
+  line-height: 24px;
+  @include roboto;
+  font-size: 16px;
+  color: $l-gray;
+}
+
+.l-map {
+  height: 1114px;
+  background-color: $l-green;
+  background-image: url(../img/content/map.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.l-contacts {
+  @include centered();
+  top: 40%;
+  width: 380px;
+  height: 312px;
+  background: $milk;
+  opacity: 0.85;
+  padding: 38px 40px 36px 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.l-contacts__title {
+  @include title;
+  @extend %underline;
+  margin-bottom: 40px;
+  text-align: center;
+
+  &:after {
+    right: 37%;
+  }
+}
+
+.l-contacts__item {
+  @extend %clearfix;
+  margin-bottom: 22px;
+}
+
+.l-contacts__icon {
+  float: left;
+  width: 24px;
+  height: 24px;
+  fill: $green;
+}
+
+.l-contacts__text {
+  margin-left: 12px;
+  float: left;
+  @include roboto-m;
+  font-size: 16px;
+  color: $l-gray;
+  display: inline-block;
+  padding-top: 3px;
+}

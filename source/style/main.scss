@@ -1,0 +1,19 @@
+//colors
+$dark-green: #4e8839;
+$green: #6c9c5a;
+$l-green: #ebefe2;
+$milk: #f4f5f0;
+$gray: #373e42;
+$l-gray: #566358;
+$d-gray: #e1e4d7;
+$white: #faf8f0;
+
+// measures
+$width: 1800px;
+
+@import 'helpers/mixins';
+
+@import 'common/layout';
+@import 'common/fonts';
+
+@import 'blocks/**/*.scss';

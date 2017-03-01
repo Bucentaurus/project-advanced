@@ -1,0 +1,79 @@
+extends ../layout
+
+block title
+    title Обо мне
+
+block content
+    .wrapper
+        section.l-section.l-hero
+            .l-hero__bg
+                img(src='assets/img/bg/main_bg.png').hero__bg-img
+            .l-hero__container
+                img(src='assets/img/bg/portfolio_header.png').c-hero__title-pic
+                .c-user
+                    .c-user__pic-container
+                        img(src='assets/img/content/mini-avatar.jpg').c-user__pic
+                    .c-user__name Владимир Астахов
+                    .c-user__occ Личный сайт разработчика
+            ul.c-socials
+                include ../socials
+            .c-menu-button
+                a.c-menu-button__link
+                    svg.c-menu-button__icon
+                        use(xlink:href=`assets/img/icons/sprite.svg#hamburger`)
+        section.l-section.l-about
+            .l-about__col.l-about__col_left
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-about__triangle
+                    polygon(points='0,0 0,110 1000,110')
+                .c-section-title(style='background-image: url("assets/img/bg/about_header.svg")') Обо мне
+                .c-about
+                    .c-about__pic-container
+                        img(src='assets/img/content/avatar.png').c-about__pic
+                    .c-block-title Кто я
+                    .c-block-text Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать современные и интересные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+
+            .l-about__col.l-about__col_right
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-about__triangle
+                    polygon(points='0,110 1000,110 1000, 0')
+                .l-skills
+                    .c-block-title.c-block-title-right  Чем я могу быть вам полезен
+                    .l-skills__text Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать несложные задачи на Backend. Но давайте по порядку.
+                        p
+                        p
+                        p
+                    ul.l-skills-group
+                        each val, index in { Frontend : ['HTML5', 'CSS3', 'JavaScript & JQuery'], Backend : ['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db'], WorkFlow : ['Git', 'Gulp', 'Bower'] }
+                            li.l-skills-group__item
+                                .c-skills-group__title= index
+                                ul.l-skills-list
+                                    li.l-skills-list__item
+                                        .c-skill
+                                            each circle in val
+                                                    svg.c-skill__circle
+                                                        circle(cx='50' cy='50' r='40').c-skills__circle-under
+                                                        circle(cx='50' cy='50' r='40').c-skills__circle-above
+                                                    if circle.length > 8
+                                                        .c-skill__title-container.c-skill__title-container-long
+                                                            .c-skill__title-text= circle
+                                                    else
+                                                        .c-skill__title-container
+                                                            .c-skill__title-text= circle
+        section.l-section.l-map
+            .l-contacts
+                .l-contacts__title Контакты
+                .l-contacts__list
+                    -
+                        var contacts = [
+                                        ['skype', 'insaneBuch'],
+                                        ['envelope2', 'bucentaurus@aol.com'],
+                                        ['phone2', '+7-903-258-74-78'],
+                                        ['map_marker', 'Москва']
+                                        ]
+                    each contact in contacts
+                        .l-contacts__item
+                            svg.l-contacts__icon
+                                use(xlink:href=`assets/img/icons/sprite.svg#${contact[0]}`)
+                            .l-contacts__text= contact[1]
+
+
+        include ../footer

@@ -1,7 +1,35 @@
-extends ../_template
+extends ../layout
 
-block variables
-  - var title = 'Home page'
+block title
+  title Артем Букреев
 
 block content
-  include ../common/_greating
+  .wrapper
+    section.l-index
+      .l-index__container
+        a.c-auth-button(href='#')
+            .c-auth-button__text Авторизоваться
+        .c-auth-block
+          .c-auth-block__high
+            .c-user.c-user-index
+              .c-user__pic-container
+                img(src='assets/img/content/mini-avatar.jpg').c-user__pic
+              .c-user__name Владимир Астахов
+              .c-user__occ Личный сайт разработчика
+            ul.c-socials.c-socials-index
+              include ../socials
+          .c-auth-block__low
+            nav.navigation
+              ul.menu-list
+                -
+                  var items = [
+                  ['Мои работы', 'works.html'],
+                  ['Обо мне', 'about.html'],
+                  ['Блог', 'blog.html']
+                  ]
+                each item in items
+                  li.menu-item
+                    a(href=item[1]).menu-item-link
+                      .menu-item__text= item[0]
+    footer.c-footer.l-footer-index
+      .c-footer__text &copy Артем Букреев |  создано с любовью в LoftSchool | 2016

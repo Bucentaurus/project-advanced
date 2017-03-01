@@ -1,0 +1,69 @@
+extends ../layout
+
+block title
+    title Мои работы
+
+block content
+    include ../hero
+    .l-works-title
+        .l-triangle__left
+            svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                polygon(points='0,0 0,110 1000,110')
+        .l-triangle__right
+            svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                polygon(points='0,110 1000,110 1000, 0')
+        .c-section-title.l-section-works-title Мои работы
+    .l-section.l-works
+        .l-works__col-left
+            .c-block-title.l-works__block-title  Сайт школы онлайн образования
+            .l-works__subtitle Html, Css, JavaScript
+            a(href='#').l-works__button
+               <!-- a(href='#').l-works-button__link -->
+                    .l-button__icon
+                        svg.l-button__link-svg
+                            use(xlink:href='assets/img/icons/sprite.svg#link')
+                    .l-button__text  Посмотреть сайт
+        .l-works__col-right
+            .l-websites__high
+                .l-website__active
+                    img(src='assets/img/content/site0.png').l-website__pic
+            .l-websites__low
+                .l-website-example
+                    .l-website-example__pic.l-website-example__pic-up
+                    .l-website-example__layer
+                    svg.l-button__svg
+                        use(xlink:href='assets/img/icons/sprite.svg#portf_arrow_down')
+                .l-website-example
+                    .l-website-example__pic.l-website-example__pic-down
+                    .l-website-example__layer
+                    svg.l-button__svg
+                        use(xlink:href='assets/img/icons/sprite.svg#portf_arrow_up')
+    .l-section.l-talks
+        .l-talks__bg
+        .l-talks__high
+            .c-section-title.l-talks-title Что обо мне говорят
+        .l-talks__center
+            .l-review__list
+                .l-review__item
+                    .l-review__avatar
+                     img(src='assets/img/content/review_pic2.png').l-review__pic
+                    .l-review__text Этот парень проходил обучение веь-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .l-review__name Ковальчук Дмитрий
+                    .l-review__occ - основатель LoftSchool
+                .l-review__item
+                    .l-review__avatar
+                     img(src='assets/img/content/review_pic.png').l-review__pic
+                    .l-review__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+                    .l-review__name Сабанцев Владимир
+                    .l-review__occ - преподаватель
+        .l-talks__low
+            .l-contact-form
+                .c-block-title Связаться со мной
+                form(id='contact-form')
+                    input(type='text', name='name', value='Имя')
+                    input(type='text', name='email', value='Email')
+                    textarea(name='message', value='Ваше сообщение')
+                    .buttons-block
+                        input(type='submit', value='Отправить')
+                        input(type='reset', value='Очистить')
+    include ../footer

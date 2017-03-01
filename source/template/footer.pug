@@ -1,0 +1,23 @@
+.c-footer-whole
+    .c-footer-high
+        .c-footer-high__left.c-footer-high__part
+            .c-footer-high__text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
+        .c-footer-high__center.c-footer-high__part
+            .c-footer-high__menu
+                ul.c-footer-menu__list
+                    -
+                        var menu = ['Мои работы', 'Обо мне', 'Блог',  'Авторизация']
+
+                    each item in menu
+                        li.c-footer-menu__item
+                            a.c-footer-menu__link= item
+
+            .c-footer-high__socials
+                ul.c-socials.c-socials-footer.c-socials-index
+                    include socials
+        .c-footer-high__right.c-footer-high__part
+            .c-footer-high__quote
+                    .quote__high Всегда пишите код так, будто сопровождать его будет склонный к насилию психпоат, который знает, где вы живете.
+                    .quote__low - Martin Golding
+    .c-footer.c-footer-low
+        .c-footer__text &copy Артем Букреев |  создано с любовью в LoftSchool | 2016
