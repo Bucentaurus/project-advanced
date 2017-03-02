@@ -1,13 +1,19 @@
 .l-about {
   @extend %clearfix;
+  position: relative;
 }
 
 .l-about__col {
   float: left;
   width: 50%;
-  position: relative;
+  //position: relative;
   height: 850px;
-  
+
+  @include tablets {
+    float: none;
+    width: 100%;
+  }
+
   &_left {
     background: $l-green;
     @extend %clearfix;
@@ -39,14 +45,15 @@
 
 .c-about__triangle {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 110px;
   position: absolute;
   bottom: 100%;
 }
 
 .c-block-title {
-   @include title;
+
+  @include block-title;
 
   @extend %underline;
 }
@@ -141,7 +148,7 @@
 }
 
 .l-contacts__title {
-  @include title;
+  @include block-title;
   @extend %underline;
   margin-bottom: 40px;
   text-align: center;

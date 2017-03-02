@@ -18,6 +18,10 @@
   font-family: 'robotobold';
 }
 
+@mixin roboto-i {
+  font-family: 'robotoitalic';
+}
+
 @mixin roboto-li {
   font-family: 'robotolight_italic';
 }
@@ -26,11 +30,11 @@
   font-family: 'robotobold_italic';
 }
 
-@mixin title {
+@mixin block-title {
   @include sansus;
   text-transform: uppercase;
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: $l-gray;
   position: relative;
 }

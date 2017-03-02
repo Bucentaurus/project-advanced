@@ -34,8 +34,15 @@
     display: inline-block;
     width: 83px;
     position: absolute;
-    top: 48px;
-    right: 41%;
+    bottom: -20px;
+    left: 41%;
     border-bottom: 3px solid #566358;
+  }
+}
+
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
   }
 }

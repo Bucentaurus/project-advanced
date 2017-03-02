@@ -2,7 +2,7 @@
   font-size: 63px;
   color: $gray;
   text-align: center;
-  padding: 45px 60px 20px 60px;
+  padding: 45px 60px 0 60px;
   display: inline-block;
   background-size: contain;
   background-position: center center;
@@ -16,13 +16,5 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 88px;
-    position: absolute;
-    bottom: 10px;
-    left: 180px;
-    border-bottom: 3px solid #566358;
-  }
+  @extend %underline;
 }

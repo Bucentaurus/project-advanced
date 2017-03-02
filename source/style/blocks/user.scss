@@ -2,6 +2,7 @@
   text-align: center;
   @include centered();
   top: 50%;
+  position: relative;
 }
 
 .c-user__pic-container {

@@ -13,33 +13,25 @@ block content
             svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
                 polygon(points='0,110 1000,110 1000, 0')
         .c-section-title.l-section-works-title Мои работы
-    .l-section.l-works
-        .l-works__col-left
-            .c-block-title.l-works__block-title  Сайт школы онлайн образования
-            .l-works__subtitle Html, Css, JavaScript
-            a(href='#').l-works__button
-               <!-- a(href='#').l-works-button__link -->
-                    .l-button__icon
-                        svg.l-button__link-svg
+    section.l-section.l-works.l-slider
+        .l-slider__col.l-slider__col_left
+            .l-slider__display
+                img(src='assets/img/content/site0.png').l-slider__display-pic
+            .l-slider__desc
+                .l-slider__desc-title
+                    .c-block-title Сайт школы онлайн образования
+                .l-slider__desc-skills
+                    | HTML, css, javascript
+                .l-slider__desc-btn
+                    a(href='#').l-btn
+                        svg.l-btn__link-svg
                             use(xlink:href='assets/img/icons/sprite.svg#link')
-                    .l-button__text  Посмотреть сайт
-        .l-works__col-right
-            .l-websites__high
-                .l-website__active
-                    img(src='assets/img/content/site0.png').l-website__pic
-            .l-websites__low
-                .l-website-example
-                    .l-website-example__pic.l-website-example__pic-up
-                    .l-website-example__layer
-                    svg.l-button__svg
-                        use(xlink:href='assets/img/icons/sprite.svg#portf_arrow_down')
-                .l-website-example
-                    .l-website-example__pic.l-website-example__pic-down
-                    .l-website-example__layer
-                    svg.l-button__svg
-                        use(xlink:href='assets/img/icons/sprite.svg#portf_arrow_up')
-    .l-section.l-talks
-        .l-talks__bg
+                        .l-button__text  Посмотреть сайт
+        .l-slider__col.l-slider__col_right
+            .l-slider__btns
+                a(href='#').l-slider__btn.l-slider__btn_left
+                a(href='#').l-slider__btn.l-slider__btn_right
+    section.l-section.l-talks
         .l-talks__high
             .c-section-title.l-talks-title Что обо мне говорят
         .l-talks__center
@@ -60,10 +52,10 @@ block content
             .l-contact-form
                 .c-block-title Связаться со мной
                 form(id='contact-form')
-                    input(type='text', name='name', value='Имя')
-                    input(type='text', name='email', value='Email')
-                    textarea(name='message', value='Ваше сообщение')
+                    input(type='text', name='name', placeholder='Имя').contact-form__name
+                    input(type='text', name='email', placeholder='Email').contact-form__email
+                    textarea(name='message', value='Ваше сообщение', placeholder='Ваше сообщение').contact-form__message
                     .buttons-block
-                        input(type='submit', value='Отправить')
-                        input(type='reset', value='Очистить')
+                        button(type='submit', value='Отправить').contact-form__send Отправить
+                        button(type='reset', value='Очистить').contact-form__reset Очистить
     include ../footer

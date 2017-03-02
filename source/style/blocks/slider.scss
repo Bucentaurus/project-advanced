@@ -1,0 +1,140 @@
+.l-slider {
+  @extend %clearfix;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.l-slider__col {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+
+    @include tablets {
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+
+    &_left {
+      background: $l-green;
+    }
+  
+    &_right {
+      background: $d-gray;
+    }
+}
+
+.l-slider__display {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  z-index: 10;
+  height: 70%;
+
+  @include tablets {
+    position: static;
+  }
+
+
+}
+
+.l-slider__desc {
+  width: 70%;
+  text-align: center;
+  @include centered();
+  display: inline-block;
+
+  @include tablets {
+    position: static;
+    transform: none;
+  }
+}
+
+.l-slider__desc-title {
+  width: 350px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.l-slider__desc-skills {
+
+  @include roboto-m;
+  font-size: 16px;
+  color: $dark-green;
+  text-transform: uppercase;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.l-btn {
+  position: relative;
+  width: 195px;
+  height: 45px;
+  background: $green;
+  border-radius: 55px;
+  @include roboto-m;
+  font-size: 16px;
+  color: #ffffff;
+  @extend %clearfix;
+  padding: 14px 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.l-btn__link-svg {
+  float: left;
+  width: 20px;
+  height: 19px;
+  fill: #ffffff;
+}
+
+.l-slider__btns {
+  @extend %clearfix;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+
+  @include tablets {
+    position: static;
+    height: 200px;
+  }
+}
+
+.l-slider__btn {
+  height: 100%;
+  display: block;
+  width: 50%;
+  float: left;
+
+  &_left {
+    background: url('../img/content/site5.png') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &_right {
+    background: url('../img/content/site6.png') no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+.l-slider__display-pic {
+  @include centered();
+  max-width: 100%;
+  display: block;
+
+  @include tablets {
+    display: inline-block;
+    position: static;
+    transform: none;
+  }
+}

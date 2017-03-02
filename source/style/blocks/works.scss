@@ -45,155 +45,14 @@
   top: 60px; 
 }
 
-.l-works {
-  height: 750px;
-  @extend %clearfix;
-}
-
-.l-works__col-left, .l-works__col-right {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-.l-works__col-left {
-  background: $l-green;
-  text-align: center;
-  padding-top: 290px;
-  padding-left: 110px;
-  padding-right: 280px;
-  box-sizing: border-box;
-}
-
-.l-works__block-title {
-  width: 320px;
-  display: inline-block;
-
-  &:after {
-    bottom: -25px;
-  }
-}
-
-.l-works__subtitle {
-  @include roboto-m;
-  font-size: 16px;
-  color: $dark-green;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
-
-.l-works__button {
-  width: 195px;
-  height: 45px;
-  background: $green;
-  border-radius: 55px;
-  @include roboto-m;
-  font-size: 16px;
-  color: #ffffff;
-  @extend %clearfix;
-  padding: 14px 16px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.l-works-button__link {
-  height: 45px;
-  width: 195px;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.l-button__icon {
-  float: left;
-  margin-right: 10px;
-}
-
-.l-button__text {
-  float: left;
-}
-
-.l-button__link-svg {
-  width: 20px;
-  height: 19px;
-  fill: #ffffff;
-}
-
-.l-works__col-right {
-  background: $d-gray;
-}
-
-.l-websites__high {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-top: 60px;
-  height: 525px;
-  text-align: center;
-}
-
-.l-websites__low {
-  width: 100%;
-  height: 225px;
-  @extend %clearfix;
-}
-
-.l-website-example {
-  width: 50%;
-  float: left;
-  height: 225px;
-  position: relative;
-}
-
-.l-website-example__pic {
-  float: left;
-  height: 225px;
-  width: 100%;
-}
-
-.l-website-example__pic-up {
-  background-image: url('../img/content/site5.png');
- // background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  &+.l-website-example__layer {
-    position: relative;
-    height: 100%;
-    background: #b0b7aa;
-    opacity: 0.7;
-  }
-}
-
-.l-website-example__pic-down {
-  background-image: url('../img/content/site6.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  &+.l-website-example__layer {
-    position: relative;
-    height: 100%;
-    background: #93998d;
-    opacity: 0.7;
-  }
-}
-
-.l-button__svg {
-  position: absolute;
-  top: 50%;
-  right: 42%;
-  width: 45px;
-  height: 30px;
-  fill: #ffffff;
-}
 
 .l-talks {
     height: 1352px;
     position: relative;
+    background-color: $milk;
+    background: url('../img/bg/works_bg.png') no-repeat center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .l-talks__high {
@@ -247,6 +106,28 @@
 
 }
 
+.l-review__text {
+  line-height: 26px;
+  @include roboto-i;
+  font-size: 16px;
+  color: #5d5a55;
+  margin-bottom: 25px;
+}
+
+.l-review__name {
+  text-align: right;
+  padding-right: 90px;
+  color: $dark-green;
+  margin-bottom: 5px;
+}
+
+.l-review__occ {
+  text-align: right;
+  padding-right: 90px;
+  @include roboto-i;
+  color: $gray;
+}
+
 .l-talks__low {
     position: relative;
     height: 55%;
@@ -257,5 +138,86 @@
     height: 461px;
     @include centered();
     top: 35%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 38px;
+    border-radius: 5px;
+    @extend %clearfix;
+    overflow: hidden;
+    top: 30%;
+}
+
+
+#contact-form {
+
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  input, textarea {
+    padding: 10px 16px 10px 16px;
+    width: 340px;
+    @include roboto-l;
+    font-size: 12px;
+    color: #aba9a7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: none;
+  }
+
+  button {
+    height: 45px;
+    float: left;
+    width: 50%;
+    background: #689956;
+    border: none;
+    border-right: 1px solid #adc5ab;
+    @include roboto;
+    color: #FFFFFF;
+    font-size: 16px;
+
+    &:last-child {
+      border-right: none;
+      border-left: 1px solid #adc5ab;
+    }
     
+    &:hover {
+      background: #7fa870;
+    }
+  }
+}
+
+.contact-form__name {
+  height: 45px;
+  border: none;
+  border-radius: 55px;
+
+}
+
+.contact-form__email {
+  height: 45px;
+  border: none;
+  border-radius: 55px;
+
+}
+
+.contact-form__message {
+  height: 140px;
+  border: none;
+  border-radius: 20px;
+
+}
+
+.buttons-block {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
 }

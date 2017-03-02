@@ -1,11 +1,12 @@
 .c-footer-whole {
   position: relative;
   height: calc(146px + 37px);
-  margin-top: -186px;
+  margin-top: -182px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #FFFFFF;
+  width: 100%;
 }
 
 .c-footer-high {
@@ -43,6 +44,8 @@
   }
     
     &:last-child {
+
+      padding-right: 30px;
         
         &::after {
             display: none;
