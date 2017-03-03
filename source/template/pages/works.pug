@@ -4,58 +4,59 @@ block title
     title Мои работы
 
 block content
-    include ../hero
-    .l-works-title
-        .l-triangle__left
-            svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
-                polygon(points='0,0 0,110 1000,110')
-        .l-triangle__right
-            svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
-                polygon(points='0,110 1000,110 1000, 0')
-        .c-section-title.l-section-works-title Мои работы
-    section.l-section.l-works.l-slider
-        .l-slider__col.l-slider__col_left
-            .l-slider__display
-                img(src='assets/img/content/site0.png').l-slider__display-pic
-            .l-slider__desc
-                .l-slider__desc-title
-                    .c-block-title Сайт школы онлайн образования
-                .l-slider__desc-skills
-                    | HTML, css, javascript
-                .l-slider__desc-btn
-                    a(href='#').l-btn
-                        svg.l-btn__link-svg
-                            use(xlink:href='assets/img/icons/sprite.svg#link')
-                        .l-button__text  Посмотреть сайт
-        .l-slider__col.l-slider__col_right
-            .l-slider__btns
-                a(href='#').l-slider__btn.l-slider__btn_left
-                a(href='#').l-slider__btn.l-slider__btn_right
-    section.l-section.l-talks
-        .l-talks__high
-            .c-section-title.l-talks-title Что обо мне говорят
-        .l-talks__center
-            .l-review__list
-                .l-review__item
-                    .l-review__avatar
-                     img(src='assets/img/content/review_pic2.png').l-review__pic
-                    .l-review__text Этот парень проходил обучение веь-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    .l-review__name Ковальчук Дмитрий
-                    .l-review__occ - основатель LoftSchool
-                .l-review__item
-                    .l-review__avatar
-                     img(src='assets/img/content/review_pic.png').l-review__pic
-                    .l-review__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
-                    .l-review__name Сабанцев Владимир
-                    .l-review__occ - преподаватель
-        .l-talks__low
-            .l-contact-form
-                .c-block-title Связаться со мной
-                form(id='contact-form')
-                    input(type='text', name='name', placeholder='Имя').contact-form__name
-                    input(type='text', name='email', placeholder='Email').contact-form__email
-                    textarea(name='message', value='Ваше сообщение', placeholder='Ваше сообщение').contact-form__message
-                    .buttons-block
-                        button(type='submit', value='Отправить').contact-form__send Отправить
-                        button(type='reset', value='Очистить').contact-form__reset Очистить
-    include ../footer
+    .wrapper
+        include ../hero
+        .l-works-title
+            .l-triangle__left
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                    polygon(points='0,0 0,110 1000,110')
+            .l-triangle__right
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                    polygon(points='0,110 1000,110 1000, 0')
+            .c-section-title.l-section-works-title Мои работы
+        section.l-section.l-works.l-slider
+            .l-slider__col.l-slider__col_left
+                .l-slider__display
+                    img(src='assets/img/content/site0.png').l-slider__display-pic
+                .l-slider__desc
+                    .l-slider__desc-title
+                        .c-block-title Сайт школы онлайн образования
+                    .l-slider__desc-skills
+                        | HTML, css, javascript
+                    .l-slider__desc-btn
+                        a(href='#').l-btn
+                            svg.l-btn__link-svg
+                                use(xlink:href='assets/img/icons/sprite.svg#link')
+                            .l-button__text  Посмотреть сайт
+            .l-slider__col.l-slider__col_right
+                .l-slider__btns
+                    a(href='#').l-slider__btn.l-slider__btn_left
+                    a(href='#').l-slider__btn.l-slider__btn_right
+        section.l-section.l-talks
+            .l-talks__high
+                .c-section-title.l-talks-title Что обо мне говорят
+            .l-talks__center
+                .l-review__list
+                    .l-review__item
+                        .l-review__avatar
+                         img(src='assets/img/content/review_pic2.png').l-review__pic
+                        .l-review__text Этот парень проходил обучение веь-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .l-review__name Ковальчук Дмитрий
+                        .l-review__occ - основатель LoftSchool
+                    .l-review__item
+                        .l-review__avatar
+                         img(src='assets/img/content/review_pic.png').l-review__pic
+                        .l-review__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+                        .l-review__name Сабанцев Владимир
+                        .l-review__occ - преподаватель
+            .l-talks__low
+                .l-contact-form
+                    .c-block-title Связаться со мной
+                    form(id='contact-form')
+                        input(type='text', name='name', placeholder='Имя').contact-form__name
+                        input(type='text', name='email', placeholder='Email').contact-form__email
+                        textarea(name='message', value='Ваше сообщение', placeholder='Ваше сообщение').contact-form__message
+                        .buttons-block
+                            button(type='submit', value='Отправить').contact-form__send Отправить
+                            button(type='reset', value='Очистить').contact-form__reset Очистить
+        include ../footer

@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.hero__bg-img {
+    width: 100%;
+}
+
 .l-hero__container {
   @include centered(y);
   height: 100%;

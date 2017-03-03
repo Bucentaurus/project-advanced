@@ -1,4 +1,19 @@
 extends ../layout
 
 block title
-    | Блог
+    title Блог
+
+block content
+    .wrapper
+        section.l-section.l-hero-blog
+            .l-hero__bg
+                img(src='assets/img/bg/main_bg.png').hero__bg-img
+            .l-hero__container
+                img(src='assets/img/bg/blog_header.svg)').c-hero__title-pic
+            .c-user
+                .c-user__pic-container
+                    img(src='assets/img/content/mini-avatar.jpg').c-user__pic
+                .c-user__name.c-section-title Артем Букреев
+                .c-user__occ Статьи, которые я написал
+            
+                
