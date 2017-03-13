@@ -30,14 +30,6 @@
   font-family: 'robotobold_italic';
 }
 
-@mixin block-title {
-  @include sansus;
-  text-transform: uppercase;
-  font-size: 35px;
-  margin-bottom: 40px;
-  color: $l-gray;
-  position: relative;
-}
 
 @font-face {
   font-family: 'sansus_webissimoregular';

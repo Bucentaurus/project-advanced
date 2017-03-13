@@ -5,15 +5,50 @@ block title
 
 block content
     .wrapper
-        section.l-section.l-hero-blog
+        section.l-section.l-hero
             .l-hero__bg
                 img(src='assets/img/bg/main_bg.png').hero__bg-img
             .l-hero__container
-                img(src='assets/img/bg/blog_header.svg)').c-hero__title-pic
-            .c-user
-                .c-user__pic-container
-                    img(src='assets/img/content/mini-avatar.jpg').c-user__pic
-                .c-user__name.c-section-title Артем Букреев
-                .c-user__occ Статьи, которые я написал
-            
-                
+                img(src='assets/img/bg/portfolio_header.png').c-hero__title-pic
+                .c-user
+                    .c-user__pic-container
+                        img(src='assets/img/content/mini-avatar.jpg').c-user__pic
+                    .l-blog-title  Блог
+                    .c-user__occ Личный сайт разработчика
+            ul.c-socials
+                include ../socials
+            .c-menu-button
+                a.c-menu-button__link
+                    svg.c-menu-button__icon
+                        use(xlink:href='assets/img/icons/sprite.svg#hamburger')
+        section.l-section.l-blog
+            .l-triangle__left
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                    polygon(points='0,0 0,110 1000,110')
+            .l-triangle__right
+                svg(viewbox='0 0 1000 110' preserveAspectRatio='none').c-works__triangle
+                    polygon(points='0,110 1000,110 1000, 0')
+            .l-blog-col.l-blog-col__left
+                ul.l-blog-menu__list
+                    li.blog-menu__item.blog-menu__item-active
+                        a(href='#').blog-menu__item-link Самое важное в  SASS
+                    li.blog-menu__item
+                        a(href='#').blog-menu__item-link Приемы в верстке, без которых не обходится ни один сайт
+                    li.blog-menu__item
+                        a(href='#').blog-menu__item-link Самый необходимый набор Gulp плагинов
+                    li.blog-menu__item
+                        a(href='#').blog-menu__item-link Почему я выбрал Jade
+            .l-blog-col.l-blog-col__right
+                .l-blog-item
+                    .l-blog-item__title Самое важное в SASS
+                    .l-blog-item__date 22 ноября 2016
+                    .l-blog-item__text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .l-blog-item__enclosure
+                        img(src='assets/img/content/blog-enc.png')
+                .l-blog-item
+                    .l-blog-item__title Приёмы в вёрстке, без которых не обходится ни один сайт
+                    .l-blog-item__date 13 ноября 2016
+                    .l-blog-item__text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .l-blog-item__enclosure
+        include ../footer
+        include ../scripts

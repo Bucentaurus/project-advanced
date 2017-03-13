@@ -1,8 +1,10 @@
 .c-user {
   text-align: center;
-  @include centered();
-  top: 50%;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  margin-left: -159px;
+  width: 318px;
+  top: 30%;
 }
 
 .c-user__pic-container {
@@ -40,6 +42,9 @@
 //index-page
 
 .c-user-index {
+  position: static;
+  left: auto;
+  margin-left: 0;
   top: 44%;
   width: 100%;
   height: inherit;

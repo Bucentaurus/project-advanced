@@ -61,10 +61,6 @@
 
 .c-block-title-right {
 
-  &::after {
-    top: 94px;
-    left: 89px;
-  }
 
 }
 
@@ -124,14 +120,20 @@
 }
 
 .l-map {
-  height: 1114px;
-  background-color: $l-green;
-  background-image: url(../img/content/map.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+   height: 1114px;
+ // background-color: $l-green;
+ // background-image: url(../img/content/map.png);
+ // background-size: contain;
+ // background-position: center center;
+ // background-repeat: no-repeat;
   position: relative;
 }
+
+#map {
+  height: inherit;
+  width: inherit;
+}
+
 
 .l-contacts {
   @include centered();

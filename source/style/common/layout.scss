@@ -23,6 +23,21 @@ ul {
 {
   overflow: hidden;
   min-height: 100vh;
-  min-width: 1800px;
+  min-width: 1200px;
+
+
+  @include laptops {
+    min-width: 768px;
+    max-width: 1200px;
+  }
+
+  @include tablets {
+    min-width: 320px;
+    max-width: 768px;
+  }
+
+  @include phones {
+    max-width: 320px;
+  }
 }
 

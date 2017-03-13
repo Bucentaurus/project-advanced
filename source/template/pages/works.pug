@@ -33,23 +33,27 @@ block content
                     a(href='#').l-slider__btn.l-slider__btn_left
                     a(href='#').l-slider__btn.l-slider__btn_right
         section.l-section.l-talks
+            .l-talks__bg
+                img(src='assets/img/bg/works_bg.png').l-talks__bg-pic
             .l-talks__high
                 .c-section-title.l-talks-title Что обо мне говорят
             .l-talks__center
                 .l-review__list
                     .l-review__item
                         .l-review__avatar
-                         img(src='assets/img/content/review_pic2.png').l-review__pic
+                            img(src='assets/img/content/review_pic2.png').l-review__pic
                         .l-review__text Этот парень проходил обучение веь-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .l-review__name Ковальчук Дмитрий
                         .l-review__occ - основатель LoftSchool
                     .l-review__item
                         .l-review__avatar
-                         img(src='assets/img/content/review_pic.png').l-review__pic
+                            img(src='assets/img/content/review_pic.png').l-review__pic
                         .l-review__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
                         .l-review__name Сабанцев Владимир
                         .l-review__occ - преподаватель
-            .l-talks__low
+            //.l-talks__low
+            .l-form-blur-wrapper
+                .l-form-blur__bg
                 .l-contact-form
                     .c-block-title Связаться со мной
                     form(id='contact-form')
@@ -60,3 +64,5 @@ block content
                             button(type='submit', value='Отправить').contact-form__send Отправить
                             button(type='reset', value='Очистить').contact-form__reset Очистить
         include ../footer
+        include ../scripts
+        script(src='assets/js/blur.js')

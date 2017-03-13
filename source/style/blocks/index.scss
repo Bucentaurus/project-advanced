@@ -3,7 +3,7 @@
   height: 100vh;
   background: url('../img/bg/main_bg.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .l-index__container {
@@ -29,6 +29,17 @@
   margin-top: 23px;
   margin-right: 100px;
   transition: .2s;
+
+  @include laptops()
+  {
+    margin-right: 22px;
+  }
+
+  @include tablets()
+  {
+    margin-right: 20px;
+  }
+
 
   &:hover {
     background: $dark-green;

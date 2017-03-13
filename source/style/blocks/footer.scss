@@ -11,7 +11,7 @@
 
 .c-footer-high {
   height: 146px;
- //border: 2px solid red;
+  display: flex;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,9 +21,8 @@
 }
 
 .c-footer-high__part {
+  width: 33%;
   position: relative;
-  float: left;
-  width: $width / 3;
   padding-top: 30px;
   padding-right: 90px;
   padding-left: 30px;
@@ -56,7 +55,8 @@
 
 .c-footer-high__left {
   @include roboto-l;
-  padding-right: 218px;
+  padding-right: 50px;
+  color: #d8d8d8;
 }
 
 .c-footer-high__text {
@@ -64,8 +64,8 @@
 }
 
 .c-footer-high__center {
-  @include roboto-b;
-  padding-right: 115px;
+  @include roboto-m;
+  padding-right: 5px;
 }
 
 .c-footer-high__right {
@@ -84,7 +84,7 @@
 
 .c-footer-menu__item {
   float: left;
-  margin-right: 40px;
+  margin-right: 15px;
 }
 
 .c-footer-menu__link {
@@ -92,6 +92,7 @@
 }
 
 .c-footer-low {
+  width: 100%;
   padding: 8px;
   height: 37px;
   -webkit-box-sizing: border-box;
@@ -99,6 +100,7 @@
   box-sizing: border-box;
   background: $green;
   opacity: 0.85;
+  @include centered(x);
 }
 
 .c-footer__text {

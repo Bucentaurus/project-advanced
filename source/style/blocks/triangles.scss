@@ -1,0 +1,22 @@
+.l-triangle__left, .l-triangle__right {
+  width: 50%;
+  height: 1px;
+  float: left;
+  position: relative;
+}
+
+.l-triangle__left {
+
+  .c-works__triangle {
+    left: 0;
+    fill: $white;
+  }
+}
+
+.l-triangle__right {
+
+  .c-works__triangle {
+    right: 0;
+    fill: $white;
+  }
+}

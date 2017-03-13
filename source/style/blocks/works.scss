@@ -5,29 +5,6 @@
   background: #f8f9f5;
 }
 
-.l-triangle__left, .l-triangle__right {
-  width: 50%;
-  height: 60px;
-  float: left;
-  position: relative;
-}
-
-.l-triangle__left {
-  
-  .c-works__triangle {
-    left: 0;
-    fill: #f8f9f5;
-  }
-}
-
-.l-triangle__right {
-  
-  .c-works__triangle {
-    right: 0;
-    fill: #f8f9f5;
-  }
-}
-
 .c-works__triangle {
   display: block;
   width: 100%;
@@ -37,12 +14,17 @@
 }
 
 .l-section-works-title {
+  height: 160px;
   float: none;
   width: auto;
-  padding-top: 0;
-  //left: 35%;
+  top: 0;
+  padding-top: 66px;
   @include centered(x);
-  top: 60px; 
+  background-image: url('../img/bg/works_header.svg');
+
+  &::after {
+    bottom: 10px;
+  }
 }
 
 
@@ -50,31 +32,34 @@
     height: 1352px;
     position: relative;
     background-color: $milk;
-    background: url('../img/bg/works_bg.png') no-repeat center bottom;
-    -webkit-background-size: cover;
-    background-size: cover;
+    //background: url('../img/bg/works_bg.png') no-repeat center bottom;
+   // -webkit-background-size: cover;
+    //background-size: cover;
+}
+
+.l-talks__bg-pic {
+  height: 100%;
 }
 
 .l-talks__high {
-    position: relative;
+    @include centered(x);
+    top: 0;
     height: 20%;
 }
 
 .l-talks-title {
-    margin-top: 60px;
+    height: 170px;
+    top: 60px;
     float: none;
-    width: 500px;
-    padding-top: 0;
+    width: 31.25rem;
+    padding-top: 42px;
     @include centered (x);
-    
-    
-    &::after {
-        left: 206px;
-    }
+    background-image: url('../img/bg/about_header.svg');
 }
 
 .l-talks__center {
-    position: relative;
+    @include centered(x);
+    top: 20%;
     height: 25%;
 }
 
@@ -129,35 +114,62 @@
 }
 
 .l-talks__low {
-    position: relative;
+    @include centered(x);
+    top: 45%;
     height: 55%;
 }
 
+.l-form-blur-wrapper {
+  width: 380px;
+  height: 461px;
+  @include centered();
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  @extend %clearfix;
+  overflow: hidden;
+  top: 45%;
+  transform: translateX(-50%);
+}
+
+.l-form-blur__bg {
+  //padding-top: 38px;
+  height: 100%;
+  //-webkit-box-sizing: border-box;
+  //-moz-box-sizing: border-box;
+  //box-sizing: border-box;
+  background: url('../img/bg/works_bg.png') center no-repeat;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  z-index: 1;
+}
+
 .l-contact-form {
-    width: 380px;
-    height: 461px;
-    @include centered();
-    top: 35%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 38px;
-    border-radius: 5px;
-    @extend %clearfix;
-    overflow: hidden;
-    top: 30%;
+  padding-top: 38px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 9999;
+  //background: url('../img/bg/works_bg.png') center no-repeat;
+  //filter: blur(20px);
+  //-webkit-filter: blur(20px);
+  @include centered(x);
+  top: 0;
+  transform: translateX(-50%);
 }
 
 
 #contact-form {
 
   outline: none;
-
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  z-index: 10;
 
   input, textarea {
     padding: 10px 16px 10px 16px;

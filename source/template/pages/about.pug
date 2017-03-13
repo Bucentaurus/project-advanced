@@ -44,6 +44,7 @@ block content
                                                         .c-skill__title-container
                                                             .c-skill__title-text= circle
         section.l-section.l-map
+            #map
             .l-contacts
                 .l-contacts__title Контакты
                 .l-contacts__list
@@ -59,6 +60,7 @@ block content
                             svg.l-contacts__icon
                                 use(xlink:href=`assets/img/icons/sprite.svg#${contact[0]}`)
                             .l-contacts__text= contact[1]
-
-
         include ../footer
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAaKMX0uN_G74nfS4Fapg5wrYumqCQt-IU')
+    script(src='assets/js/map.js')
+    include ../scripts
